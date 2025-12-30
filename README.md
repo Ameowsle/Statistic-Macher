@@ -10,11 +10,10 @@ pd.set_option('display.max_rows', None)
 pd.set_option('display.max_info_columns', 10_000)   # zeigt alle Spaltennamen in info()
 pd.set_option('display.max_info_rows', 200_000)     # zeigt Zeileninfo, wenn nötig
 
-
-# Pfad zur Datei
+#### Pfad zur Datei
 path = Path("xxx")
 
-# Einfacher Import
+#### Einfacher Import
 df = pd.read_csv(path)
 
 
