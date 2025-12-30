@@ -1,7 +1,7 @@
-# Projektname
+# Statistikprojekt: Analyse der Chicago 311 Service Requests im Jahr 2024
 
-Kurze **Beschreibung** des Projekts.
-Datenanalyse für Chicago-311-Requests 2024
+Dieses Projekt analysiert die Chicago 311 Service Requests für das Jahr 2024 mit dem Ziel, zeitliche, räumliche und inhaltliche Muster im Meldeverhalten zu identifizieren.  
+Der Datensatz umfasst mehrere Millionen Einträge zu unterschiedlichen Service-Request-Typen (SR_TYPE), deren Zeitpunkt, Bearbeitungsdauer, geografische Koordinaten und weiter Spalten (39 Spalten). 
 
 ## Installation
 pd.set_option('display.max_columns', None)
