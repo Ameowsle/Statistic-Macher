@@ -21,7 +21,7 @@ df = pd.read_csv(path)
 ## Übersicht Notebooks
 
 | Name | Beschreibung |
-|--------|--------|--------------|
+|--------|--------|
 | `Overview.ipynb` | Überblick über den Datensatz, Struktur, erste Exploration, Missing Values |
 | `Datensatz_Verkuerzung.ipynb` | Vorbereitung und Reduktion des Datensatzes für die Analyse |
 | `Created_Date_Verteilung.ipynb` | Zeitliche Verteilung der Meldungen |
