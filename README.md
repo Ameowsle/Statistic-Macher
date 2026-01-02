@@ -23,17 +23,17 @@ df = pd.read_csv(path)
 
 ## Übersicht Notebooks
 
-| Name | Beschreibung |
-|--------|--------|
-| `Overview.ipynb` | Überblick über den Datensatz, Struktur, erste Exploration, Missing Values |
-| `Datensatz_Verkuerzung.ipynb` | Vorbereitung und Reduktion des Datensatzes für die Analyse auf das Jahr 2024 |
-| `Created_Date_Verteilung.ipynb` | Zeitliche Verteilung der Meldungen |
-| `Created_Date_Hypothesentests.ipynb` | Hypothesentests zu zeitlichen Mustern |
-| `Feiertagseffekt_Clean.ipynb` | Analyse des Feiertagseffekts mittels Regression und Anteilsvergleichen |
-| `GeoDaten.ipynb` | Räumliche Analyse und Identifikation geografischer Hotspots |
-| `Imputation_geodaten.ipynb` | Imputation fehlender geografischer Koordinaten |
-| `Bearbeitungszeit_SR_Requests.ipynb` | Analyse der Bearbeitungszeiten für Service Requests |
-| `README.md` | Projektübersicht |
+| Name | Creator | Beschreibung | 
+|--------|--------|--------|
+| `Overview.ipynb` | A | Überblick über den Datensatz, Struktur, erste Exploration, Missing Values |
+| `Datensatz_Verkuerzung.ipynb` | A | Vorbereitung und Reduktion des Datensatzes für die Analyse auf das Jahr 2024 |
+| `Created_Date_Verteilung.ipynb` | A | Zeitliche Verteilung der Meldungen |
+| `Created_Date_Hypothesentests.ipynb` | A | Hypothesentests zu zeitlichen Mustern |
+| `Feiertagseffekt_Clean.ipynb` | A | Analyse des Feiertagseffekts mittels Regression und Anteilsvergleichen |
+| `GeoDaten.ipynb` | A | Räumliche Analyse und Identifikation geografischer Hotspots |
+| `Imputation_geodaten.ipynb` | A | Imputation fehlender geografischer Koordinaten |
+| `Bearbeitungszeit_SR_Requests.ipynb` | A | Analyse der Bearbeitungszeiten für Service Requests |
+| `README.md` | A | Projektübersicht |
 
 ## Key Findings
 
