@@ -16,23 +16,77 @@ path = Path("xxx")
 #### Einfacher Import
 df = pd.read_csv(path)
 
-
+## Datenbasis
+- Quelle: Chicago 311 Service Requests
+- Zeitraum: 01.01.2024 – 31.12.2024
+- Umfang: 1,913,929 Einträge
 
 ## Übersicht Notebooks
 
 | Name | Beschreibung |
 |--------|--------|
 | `Overview.ipynb` | Überblick über den Datensatz, Struktur, erste Exploration, Missing Values |
-| `Datensatz_Verkuerzung.ipynb` | Vorbereitung und Reduktion des Datensatzes für die Analyse |
+| `Datensatz_Verkuerzung.ipynb` | Vorbereitung und Reduktion des Datensatzes für die Analyse auf das Jahr 2024 |
 | `Created_Date_Verteilung.ipynb` | Zeitliche Verteilung der Meldungen |
 | `Created_Date_Hypothesentests.ipynb` | Hypothesentests zu zeitlichen Mustern |
 | `Feiertagseffekt_Clean.ipynb` | Analyse des Feiertagseffekts mittels Regression und Anteilsvergleichen |
 | `GeoDaten.ipynb` | Räumliche Analyse und Identifikation geografischer Hotspots |
 | `Imputation_geodaten.ipynb` | Imputation fehlender geografischer Koordinaten |
-| `Bearbeitungszeit_SR_Requests.ipynb` | Analyse der Bearbeitungszeiten |
+| `Bearbeitungszeit_SR_Requests.ipynb` | Analyse der Bearbeitungszeiten für Service Requests |
 | `README.md` | Projektübersicht |
 
 ## Key Findings
+
+
+## Analyse: Bearbeitungszeiten der Service Requests
+
+### Fragestellung
+
+Diese Analyse untersucht die **Bearbeitungsdauer** der Chicago 311 Service Requests im Jahr 2024.  
+Ziel ist es, die Leistungsfähigkeit des Systems zu bewerten und zentrale Einflussfaktoren auf die Bearbeitungszeit zu identifizieren.
+
+Der analytische Fokus liegt auf **abgeschlossenen (completed) Service Requests**, da nur für diese eine vollständige Bearbeitungszeit vorliegt.
+
+### Datenaufbereitung
+
+- Die Bearbeitungszeit wird als Differenz zwischen `CREATED_DATE` und `CLOSED_DATE` berechnet.
+- Eine Plausibilitätsprüfung zeigt **keine negativen Bearbeitungszeiten**.
+- Fehlende Werte entstehen ausschliesslich durch **offene Service Requests** und stellen kein Datenqualitätsproblem dar.
+- Die Zeitstempel sind chronologisch konsistent und direkt für die Analyse verwendbar.
+
+### Methodik
+
+- Deskriptive Analyse der Bearbeitungszeiten nach Status (`completed`, `open`, `canceled`)
+- Untersuchung der Verteilungsform mittels Histogrammen, ECDFs und QQ-Plots
+- Verwendung robuster Kennzahlen (Median, Quantile) aufgrund starker Rechtsschiefe
+- Gruppenvergleiche:
+  - nach Service-Request-Typ
+  - nach zuständigem Department
+  - nach Wochentag
+- Einsatz nichtparametrischer Tests (Kruskal-Wallis, Dunn-Post-hoc)
+- Analyse des Zusammenhangs zwischen täglichem Anfragevolumen (Workload) und Bearbeitungszeit
+  - explorative OLS-Regression
+  - Spearman-Rangkorrelation
+
+### Zentrale Ergebnisse
+
+- Die Bearbeitungszeiten abgeschlossener Service Requests sind **stark rechtsschief verteilt**.
+- Der Median der Bearbeitungszeit ist sehr niedrig, während wenige Extremfälle die Verteilung dominieren.
+- Abgebrochene Service Requests werden überwiegend sehr früh im Prozess beendet.
+- Zwischen Service-Request-Typen bestehen **signifikante Unterschiede** in der Bearbeitungsdauer:
+  - kurze Zeiten bei standardisierten und informationsbezogenen Anfragen,
+  - lange Zeiten bei Bau-, Infrastruktur- und baumbezogenen Requests.
+- Auch zwischen Departments zeigen sich klare Unterschiede, die die Typ-Effekte widerspiegeln.
+- Der Median der Bearbeitungszeit ist über die Wochentage hinweg stabil. Unterschiede zeigen sich erst in höheren Quantilen.
+- Ein höheres tägliches Anfragevolumen ist mit längeren Bearbeitungszeiten verbunden, der Effekt wird jedoch erst bei sehr hohen Workloads deutlich.
+
+
+### Interpretation
+
+Die Analyse zeigt ein insgesamt **stabiles und leistungsfähiges System**, bei dem Verzögerungen primär durch **strukturelle Faktoren** verursacht werden.  
+Insbesondere komplexe Service-Request-Typen und behördlich regulierte Prozesse treiben lange Bearbeitungszeiten, während zeitliche Effekte wie Wochentage oder saisonale Schwankungen eine untergeordnete Rolle spielen.
+
+Optimierungspotenziale liegen daher weniger in der allgemeinen Prozesssteuerung, sondern gezielt bei einzelnen, besonders zeitintensiven Kategorien.
 
 
 ## Analyse: Feiertagseffekt
