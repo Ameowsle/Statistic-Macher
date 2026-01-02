@@ -26,7 +26,7 @@ df = pd.read_csv(path)
 | Name | Beschreibung |
 |--------|--------|
 | `Overview.ipynb` | Überblick über den Datensatz, Struktur, erste Exploration, Missing Values |
-| `Datensatz_Verkuerzung.ipynb` | Vorbereitung und Reduktion des Datensatzes für die Analyse |
+| `Datensatz_Verkuerzung.ipynb` | Vorbereitung und Reduktion des Datensatzes für die Analyse auf das Jahr 2024 |
 | `Created_Date_Verteilung.ipynb` | Zeitliche Verteilung der Meldungen |
 | `Created_Date_Hypothesentests.ipynb` | Hypothesentests zu zeitlichen Mustern |
 | `Feiertagseffekt_Clean.ipynb` | Analyse des Feiertagseffekts mittels Regression und Anteilsvergleichen |
