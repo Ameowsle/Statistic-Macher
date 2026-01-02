@@ -4,10 +4,13 @@ Dieses Projekt analysiert die Chicago 311 Service Requests für das Jahr 2024 mi
 Der Datensatz umfasst mehrere Millionen Einträge zu unterschiedlichen Service-Request-Typen (SR_TYPE), deren Zeitpunkt, Bearbeitungsdauer, geografische Koordinaten und weiter Spalten (39 Spalten). 
 
 ## Installation
+
 pd.set_option('display.max_columns', None)
+
 pd.set_option('display.max_rows', None)
 
 pd.set_option('display.max_info_columns', 10_000)   # zeigt alle Spaltennamen in info()
+
 pd.set_option('display.max_info_rows', 200_000)     # zeigt Zeileninfo, wenn nötig
 
 #### Pfad zur Datei
@@ -20,6 +23,15 @@ df = pd.read_csv(path)
 - Quelle: Chicago 311 Service Requests
 - Zeitraum: 01.01.2024 – 31.12.2024
 - Umfang: 1,913,929 Einträge
+- Umfang: 1’913’929 Beobachtungen
+- Anzahl Variablen: 39
+  
+Zentrale untersuchte Variablen:
+- Service-Request-Typ (SR_TYPE)
+- Zeitstempel (Created / Closed Date)
+- Status
+- Bearbeitungsdauer
+- Geografische Koordinaten
 
 ## Übersicht Notebooks
 
