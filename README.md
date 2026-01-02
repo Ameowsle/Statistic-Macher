@@ -25,14 +25,14 @@ df = pd.read_csv(path)
 
 | Name | Creator | Beschreibung | 
 |--------|--------|--------|
-| `Overview.ipynb` | A | Überblick über den Datensatz, Struktur, erste Exploration, Missing Values |
-| `Datensatz_Verkuerzung.ipynb` | A | Vorbereitung und Reduktion des Datensatzes für die Analyse auf das Jahr 2024 |
-| `Created_Date_Verteilung.ipynb` | A | Zeitliche Verteilung der Meldungen |
-| `Created_Date_Hypothesentests.ipynb` | A | Hypothesentests zu zeitlichen Mustern |
-| `Feiertagseffekt_Clean.ipynb` | A | Analyse des Feiertagseffekts mittels Regression und Anteilsvergleichen |
-| `GeoDaten.ipynb` | A | Räumliche Analyse und Identifikation geografischer Hotspots |
-| `Imputation_geodaten.ipynb` | A | Imputation fehlender geografischer Koordinaten |
-| `Bearbeitungszeit_SR_Requests.ipynb` | A | Analyse der Bearbeitungszeiten für Service Requests |
+| `Overview.ipynb` | Anastasia, Katharina, Amelia | Überblick über den Datensatz, Struktur, erste Exploration, Missing Values |
+| `Datensatz_Verkuerzung.ipynb` | Anastasia, Katharina, Amelia | Vorbereitung und Reduktion des Datensatzes für die Analyse auf das Jahr 2024 |
+| `Created_Date_Verteilung.ipynb` | Katharina | Zeitliche Verteilung der Meldungen |
+| `Created_Date_Hypothesentests.ipynb` | Katharina | Hypothesentests zu zeitlichen Mustern |
+| `Feiertagseffekt_Clean.ipynb` | Amelia | Analyse des Feiertagseffekts mittels Regression und Anteilsvergleichen |
+| `GeoDaten.ipynb` | Amelia | Räumliche Analyse und Identifikation geografischer Hotspots |
+| `Imputation_geodaten.ipynb` | Katharina | Imputation fehlender geografischer Koordinaten |
+| `Bearbeitungszeit_SR_Requests.ipynb` | Anastasia | Analyse der Bearbeitungszeiten für Service Requests |
 | `README.md` | A | Projektübersicht |
 
 ## Key Findings
