@@ -33,7 +33,7 @@ df = pd.read_csv(path)
 | `GeoDaten.ipynb` | Amelia | Räumliche Analyse und Identifikation geografischer Hotspots |
 | `Imputation_geodaten.ipynb` | Katharina | Imputation fehlender geografischer Koordinaten |
 | `Bearbeitungszeit_SR_Requests.ipynb` | Anastasia | Analyse der Bearbeitungszeiten für Service Requests |
-| `README.md` | A | Projektübersicht |
+| `README.md` | Anastasia, Katharina, Amelia | Projektübersicht |
 
 ## Key Findings
 
