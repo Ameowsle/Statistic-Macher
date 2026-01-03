@@ -73,7 +73,7 @@ Das Projekt ist modular aufgebaut. Jedes Notebook bearbeitet eine klar abgegrenz
 | `Overview.ipynb` | Anastasia, Katharina, Amelia | Überblick über den Datensatz, Struktur, erste Exploration, Missing Values |
 | `Datensatz_Verkleinerung.ipynb` | Anastasia | Vorbereitung und Reduktion des Datensatzes für die Analyse auf das Jahr 2024 |
 | `Bearbeitungszeit_SR_Requests.ipynb` | Anastasia | Analyse der Bearbeitungszeiten für Service Requests |
-| `Feiertagseffekt_Clean.ipynb` | Amelia | Analyse des Feiertagseffekts mittels Regression und Anteilsvergleichen |
+| `Feiertagseffekt.ipynb` | Amelia | Analyse des Feiertagseffekts mittels Regression und Anteilsvergleichen |
 | `GeoDaten.ipynb` | Amelia | Räumliche Analyse und Identifikation geografischer Hotspots |
 | `Hypothesentests_Korrelation_Erstellungsdaten.ipynb` | Katharina | Hypothesentests zu zeitlichen Mustern |
 | `Imputation_geodaten.ipynb` | Katharina | Imputation fehlender geografischer Koordinaten |
