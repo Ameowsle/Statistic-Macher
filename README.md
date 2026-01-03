@@ -41,13 +41,15 @@ Das Projekt ist modular aufgebaut. Jedes Notebook bearbeitet eine klar abgegrenz
 - Reduktion des Datensatzes auf das Jahr 2024
 
 ## 2. Imputation
-
+- Imputation von geografischen Spalten wie Longitude/Latitude mithilfe von libraries
+  
 ## 3. Vertiefung in einzelne Themen
 
 ### 3.1 ⁠Zeitliche Analysen
-- Untersuchung der zeitlichen Verteilung der Meldungen
-- Analyse von Tages-, Wochen- und Monatseffekten
+- Untersuchung der Erstellungsdaten der Meldungen
+- Analyse von Tages-, Wochen- und Monatsdaten
 - Durchführung ausgewählter Hypothesentests zu zeitlichen Mustern
+- Korrelationsanalysen zu Erstellungsdaten
 
 ### 3.2 Analyse der Bearbeitungsdauer
 - Analyse der Bearbeitungszeiten abgeschlossener Service Requests inklusive Verteilungsform und zeitlicher Muster (Saisonalität, Wochentage, Feiertage)
@@ -72,13 +74,14 @@ Das Projekt ist modular aufgebaut. Jedes Notebook bearbeitet eine klar abgegrenz
 | `Datensatz_Verkuerzung.ipynb` | Anastasia | Vorbereitung und Reduktion des Datensatzes für die Analyse auf das Jahr 2024 |
 | `Created_Date_Verteilung.ipynb` | Katharina | Zeitliche Verteilung der Meldungen |
 | `Created_Date_Hypothesentests.ipynb` | Katharina | Hypothesentests zu zeitlichen Mustern |
+| `Bearbeitungszeit_SR_Requests.ipynb` | Anastasia | Analyse der Bearbeitungszeiten für Service Requests |
+| `Datensatz_Verkleinerung.ipynb` | Anastasia | Vorbereitung und Reduktion des Datensatzes für die Analyse auf das Jahr 2024 |
 | `Feiertagseffekt_Clean.ipynb` | Amelia | Analyse des Feiertagseffekts mittels Regression und Anteilsvergleichen |
 | `GeoDaten.ipynb` | Amelia | Räumliche Analyse und Identifikation geografischer Hotspots |
+| `Hypothesentests_Korrelation_Erstellungsdaten.ipynb` | Katharina | Hypothesentests zu zeitlichen Mustern |
 | `Imputation_geodaten.ipynb` | Katharina | Imputation fehlender geografischer Koordinaten |
-| `Bearbeitungszeit_SR_Requests.ipynb` | Anastasia | Analyse der Bearbeitungszeiten für Service Requests |
+| `Verteilung_der_Erstellungsdaten.ipynb` | Katharina | Zeitliche Verteilung der Meldungen |
 | `README.md` | Anastasia, Katharina, Amelia | Projektübersicht |
-
-
 ---
 
 ## Hinweise
