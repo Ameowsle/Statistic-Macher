@@ -71,11 +71,8 @@ Das Projekt ist modular aufgebaut. Jedes Notebook bearbeitet eine klar abgegrenz
 | Name | Creator | Beschreibung | 
 |--------|--------|--------|
 | `Overview.ipynb` | Anastasia, Katharina, Amelia | Überblick über den Datensatz, Struktur, erste Exploration, Missing Values |
-| `Datensatz_Verkuerzung.ipynb` | Anastasia | Vorbereitung und Reduktion des Datensatzes für die Analyse auf das Jahr 2024 |
-| `Created_Date_Verteilung.ipynb` | Katharina | Zeitliche Verteilung der Meldungen |
-| `Created_Date_Hypothesentests.ipynb` | Katharina | Hypothesentests zu zeitlichen Mustern |
-| `Bearbeitungszeit_SR_Requests.ipynb` | Anastasia | Analyse der Bearbeitungszeiten für Service Requests |
 | `Datensatz_Verkleinerung.ipynb` | Anastasia | Vorbereitung und Reduktion des Datensatzes für die Analyse auf das Jahr 2024 |
+| `Bearbeitungszeit_SR_Requests.ipynb` | Anastasia | Analyse der Bearbeitungszeiten für Service Requests |
 | `Feiertagseffekt_Clean.ipynb` | Amelia | Analyse des Feiertagseffekts mittels Regression und Anteilsvergleichen |
 | `GeoDaten.ipynb` | Amelia | Räumliche Analyse und Identifikation geografischer Hotspots |
 | `Hypothesentests_Korrelation_Erstellungsdaten.ipynb` | Katharina | Hypothesentests zu zeitlichen Mustern |
@@ -88,9 +85,4 @@ Das Projekt ist modular aufgebaut. Jedes Notebook bearbeitet eine klar abgegrenz
 
 - Die Notebooks sind kommentiert und einzeln ausführbar.
 - Methodische Entscheidungen sind innerhalb der Notebooks dokumentiert (Fallnotizen).
-
-
-
-
-
 
