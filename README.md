@@ -42,13 +42,15 @@ Das Projekt ist modular aufgebaut. Jedes Notebook bearbeitet eine klar abgegrenz
 - Reduktion des Datensatzes auf das Jahr 2024
 
 ## 2. Imputation
-
+- Imputation von geografischen Spalten wie Longitude/Latitude mithilfe von libraries
+  
 ## 3. Vertiefung in einzelne Themen
 
 ### 3.1 ⁠Zeitliche Analysen
-- Untersuchung der zeitlichen Verteilung der Meldungen
-- Analyse von Tages-, Wochen- und Monatseffekten
+- Untersuchung der Erstellungsdaten der Meldungen
+- Analyse von Tages-, Wochen- und Monatsdaten
 - Durchführung ausgewählter Hypothesentests zu zeitlichen Mustern
+- Korrelationsanalysen zu Erstellungsdaten
 
 ### 3.2 ⁠Inhaltliche Analysen
 - Analyse der Bearbeitungszeiten abgeschlossener Service Requests
@@ -71,8 +73,8 @@ Das Projekt ist modular aufgebaut. Jedes Notebook bearbeitet eine klar abgegrenz
 |--------|--------|--------|
 | `Overview.ipynb` | Anastasia, Katharina, Amelia | Überblick über den Datensatz, Struktur, erste Exploration, Missing Values |
 | `Datensatz_Verkuerzung.ipynb` | Anastasia, Katharina, Amelia | Vorbereitung und Reduktion des Datensatzes für die Analyse auf das Jahr 2024 |
-| `Created_Date_Verteilung.ipynb` | Katharina | Zeitliche Verteilung der Meldungen |
-| `Created_Date_Hypothesentests.ipynb` | Katharina | Hypothesentests zu zeitlichen Mustern |
+| `Verteilung_der_Erstellungsdaten.ipynb` | Katharina | Zeitliche Verteilung der Meldungen |
+| `Hypothesentests_Korrelation_Erstellungsdaten.ipynb` | Katharina | Hypothesentests zu zeitlichen Mustern |
 | `Feiertagseffekt_Clean.ipynb` | Amelia | Analyse des Feiertagseffekts mittels Regression und Anteilsvergleichen |
 | `GeoDaten.ipynb` | Amelia | Räumliche Analyse und Identifikation geografischer Hotspots |
 | `Imputation_geodaten.ipynb` | Katharina | Imputation fehlender geografischer Koordinaten |
