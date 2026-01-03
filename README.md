@@ -22,7 +22,6 @@ df = pd.read_csv(path)
 ## Datenbasis
 - Quelle: Chicago 311 Service Requests
 - Zeitraum: 01.01.2024 – 31.12.2024
-- Umfang: 1,913,929 Einträge
 - Umfang: 1’913’929 Beobachtungen
 - Anzahl Variablen: 39
   
@@ -50,10 +49,10 @@ Das Projekt ist modular aufgebaut. Jedes Notebook bearbeitet eine klar abgegrenz
 - Analyse von Tages-, Wochen- und Monatseffekten
 - Durchführung ausgewählter Hypothesentests zu zeitlichen Mustern
 
-### 3.2 ⁠Inhaltliche Analysen
-- Analyse der Bearbeitungszeiten abgeschlossener Service Requests
-- Untersuchung von Unterschieden nach SR_TYPE und Department
-- Einsatz robuster Kennzahlen und nichtparametrischer Tests bei schiefen Verteilungen
+### 3.2 Analyse der Bearbeitungsdauer
+- Analyse der Bearbeitungszeiten abgeschlossener Service Requests inklusive Verteilungsform und zeitlicher Muster (Saisonalität, Wochentage, Feiertage)
+- Vergleich der Bearbeitungszeiten zwischen Service-Request-Typen (SR_TYPE) anhand robuster Kennzahlen (Median, IQR)
+- Globaler Gruppenvergleich mittels Kruskal–Wallis-Test mit anschliessender deskriptiver Post-hoc-Analyse
 
 ### 3.3⁠ ⁠Feiertagseffekt
 - Aggregation der Daten auf Tagesebene
@@ -70,7 +69,7 @@ Das Projekt ist modular aufgebaut. Jedes Notebook bearbeitet eine klar abgegrenz
 | Name | Creator | Beschreibung | 
 |--------|--------|--------|
 | `Overview.ipynb` | Anastasia, Katharina, Amelia | Überblick über den Datensatz, Struktur, erste Exploration, Missing Values |
-| `Datensatz_Verkuerzung.ipynb` | Anastasia, Katharina, Amelia | Vorbereitung und Reduktion des Datensatzes für die Analyse auf das Jahr 2024 |
+| `Datensatz_Verkuerzung.ipynb` | Anastasia | Vorbereitung und Reduktion des Datensatzes für die Analyse auf das Jahr 2024 |
 | `Created_Date_Verteilung.ipynb` | Katharina | Zeitliche Verteilung der Meldungen |
 | `Created_Date_Hypothesentests.ipynb` | Katharina | Hypothesentests zu zeitlichen Mustern |
 | `Feiertagseffekt_Clean.ipynb` | Amelia | Analyse des Feiertagseffekts mittels Regression und Anteilsvergleichen |
