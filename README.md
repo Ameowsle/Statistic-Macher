@@ -22,7 +22,6 @@ df = pd.read_csv(path)
 ## Datenbasis
 - Quelle: Chicago 311 Service Requests
 - Zeitraum: 01.01.2024 – 31.12.2024
-- Umfang: 1,913,929 Einträge
 - Umfang: 1’913’929 Beobachtungen
 - Anzahl Variablen: 39
   
@@ -52,10 +51,10 @@ Das Projekt ist modular aufgebaut. Jedes Notebook bearbeitet eine klar abgegrenz
 - Durchführung ausgewählter Hypothesentests zu zeitlichen Mustern
 - Korrelationsanalysen zu Erstellungsdaten
 
-### 3.2 ⁠Inhaltliche Analysen
-- Analyse der Bearbeitungszeiten abgeschlossener Service Requests
-- Untersuchung von Unterschieden nach SR_TYPE und Department
-- Einsatz robuster Kennzahlen und nichtparametrischer Tests bei schiefen Verteilungen
+### 3.2 Analyse der Bearbeitungsdauer
+- Analyse der Bearbeitungszeiten abgeschlossener Service Requests inklusive Verteilungsform und zeitlicher Muster (Saisonalität, Wochentage, Feiertage)
+- Vergleich der Bearbeitungszeiten zwischen Service-Request-Typen (SR_TYPE) anhand robuster Kennzahlen (Median, IQR)
+- Globaler Gruppenvergleich mittels Kruskal–Wallis-Test mit anschliessender deskriptiver Post-hoc-Analyse
 
 ### 3.3⁠ ⁠Feiertagseffekt
 - Aggregation der Daten auf Tagesebene
@@ -71,25 +70,19 @@ Das Projekt ist modular aufgebaut. Jedes Notebook bearbeitet eine klar abgegrenz
 
 | Name | Creator | Beschreibung | 
 |--------|--------|--------|
+| `Overview.ipynb` | Anastasia, Katharina, Amelia | Überblick über den Datensatz, Struktur, erste Exploration, Missing Values |
+| `Datensatz_Verkleinerung.ipynb` | Anastasia | Vorbereitung und Reduktion des Datensatzes für die Analyse auf das Jahr 2024 |
 | `Bearbeitungszeit_SR_Requests.ipynb` | Anastasia | Analyse der Bearbeitungszeiten für Service Requests |
-| `Datensatz_Verkleinerung.ipynb` | Anastasia, Katharina, Amelia | Vorbereitung und Reduktion des Datensatzes für die Analyse auf das Jahr 2024 |
 | `Feiertagseffekt_Clean.ipynb` | Amelia | Analyse des Feiertagseffekts mittels Regression und Anteilsvergleichen |
 | `GeoDaten.ipynb` | Amelia | Räumliche Analyse und Identifikation geografischer Hotspots |
 | `Hypothesentests_Korrelation_Erstellungsdaten.ipynb` | Katharina | Hypothesentests zu zeitlichen Mustern |
 | `Imputation_geodaten.ipynb` | Katharina | Imputation fehlender geografischer Koordinaten |
-| `Overview.ipynb` | Anastasia, Katharina, Amelia | Überblick über den Datensatz, Struktur, erste Exploration, Missing Values |
-| `README.md` | Anastasia, Katharina, Amelia | Projektübersicht |
 | `Verteilung_der_Erstellungsdaten.ipynb` | Katharina | Zeitliche Verteilung der Meldungen |
-
+| `README.md` | Anastasia, Katharina, Amelia | Projektübersicht |
 ---
 
 ## Hinweise
 
 - Die Notebooks sind kommentiert und einzeln ausführbar.
 - Methodische Entscheidungen sind innerhalb der Notebooks dokumentiert (Fallnotizen).
-
-
-
-
-
 
